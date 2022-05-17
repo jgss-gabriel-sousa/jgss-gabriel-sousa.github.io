@@ -4,3 +4,11 @@ header {
     z-index: 999;
     transition: top 0.3s;
 }
+/*
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--bs-dark);
+        color: var(--bs-light);
+    }
+}
+*/
