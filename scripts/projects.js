@@ -10,11 +10,10 @@ export function generateProjectsHTML(){
                 </div>
 
                 <div class="card-body">
-                    <h3 class="card-text">${project.title}</h3>
+                    <h3 class="card-text"><a class="link-dark no-decoration" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">${project.title}</a></h3>
                     <p class="card-text">${project.description}</p>
                     <div class="d-flex justify-content-between align-items-start">
                         <div class="container d-flex flex-column align-items-center btn-group">
-                            <a class="btn btn-sm btn-outline-secondary mb-2 rounded" role="button" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
                             `+downloadBtnHTML(project)+`
                             `+siteBtnHTML(project)+`
                         </div>
@@ -65,15 +64,28 @@ function siteBtnHTML(project){
 const projects = [
     {
         title: "PokéDex",
-        description: "Site com uma PokeDex que obtém dados de API's externas",
+        description: "Site com uma PokéDex que obtém dados de API's externas",
         github: "PokeDex",
         download: "",
         site: true,
         img: "https://user-images.githubusercontent.com/42483024/169171404-3268f80e-e1e3-4892-a7de-f9e5b39c9318.jpg",
         tags: [
-            "C++",
-            "SFML",
-            "GameDev"
+            "JavaScript",
+            "Front-End",
+            ""
+        ],
+    },
+    {
+        title: "Heroes and Monsters - Bestiário",
+        description: "Bestiário de um sistema de RPG de Mesa",
+        github: "Heroes-and-Monsters-Bestiario",
+        download: "",
+        site: true,
+        img: "",
+        tags: [
+            "JavaScript",
+            "Front-End",
+            ""
         ],
     },
     {
@@ -100,6 +112,19 @@ const projects = [
             "C++",
             "SFML",
             "GameDev"
+        ],
+    },
+    {
+        title: "Ano Novo",
+        description: "Contagem Regressiva para o Ano Novo",
+        github: "New-Year-Countdown",
+        download: "",
+        site: true,
+        img: "",
+        tags: [
+            "JavaScript",
+            "Front-End",
+            ""
         ],
     },
 ]

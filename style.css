@@ -9,6 +9,10 @@ header {
     object-fit: contain;
 }
 
+.no-decoration {
+    text-decoration: none;
+}
+
 /*
 @media (prefers-color-scheme: dark) {
     body {
