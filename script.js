@@ -1,14 +1,8 @@
-var prevScrollpos = window.pageYOffset;
+import { hideNavbar } from "./scripts/navbar.js";
+import { generateProjectsHTML } from "./scripts/projects.js";
 
 window.onscroll = () => {
-    var currentScrollPos = window.pageYOffset;
-    
-    if(prevScrollpos > currentScrollPos){
-        document.getElementById("header").style.top = "0";
-    }
-    else{
-        document.getElementById("header").style.top = "-100px";
-    }
-
-    prevScrollpos = currentScrollPos;
+    hideNavbar();
 }
+
+generateProjectsHTML();
