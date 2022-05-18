@@ -3,7 +3,7 @@ export function generateProjectsHTML(){
 
     projects.forEach(project => {
         projectCard.innerHTML += `
-        <div class="col">
+        <div class="col d-flex">
             <div class="project-card col card shadow-sm">
                 <div class="bg-secondary m-0 rounded shadow-mx">
                     `+imgHTML(project)+`
@@ -14,8 +14,9 @@ export function generateProjectsHTML(){
                     <p class="card-text">${project.description}</p>
                     <div class="d-flex justify-content-between align-items-start">
                         <div class="container d-flex flex-column align-items-center btn-group">
-                            <a class="btn btn-sm btn-secondary mb-1" role="button" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a class="btn btn-sm btn-outline-secondary mb-2 rounded" role="button" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">GitHub</a>
                             `+downloadBtnHTML(project)+`
+                            `+siteBtnHTML(project)+`
                         </div>
                         `+tagsHTML(project)+`
                     </div>
@@ -31,7 +32,7 @@ function imgHTML(project){
     if(project.img == "") 
         return `
         <figure class="mb-1">
-            <img class="contain rounded" width="100%" height="225" src="https://cataas.com/cat">
+            <img class="contain rounded cat" width="100%" height="225"">
             <figcaption class="small text-center text-light">Sem imagem disponível, mas fique com esse gatinho</figcaption>
         </figure>
         `;
@@ -52,15 +53,35 @@ function tagsHTML(project){
 function downloadBtnHTML(project){
     if(project.download == "") return "";
 
-    return `<a class="btn btn-sm btn-secondary mb-1" role="button" href="${project.download}" target="_blank" rel="noopener noreferrer">Download</a>`;
+    return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="${project.download}" target="_blank" rel="noopener noreferrer">Download</a>`;
+}
+
+function siteBtnHTML(project){
+    if(!project.site) return "";
+
+    return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="https://jgss-gabriel-sousa.github.io/${project.github}/" target="_blank" rel="noopener noreferrer">Acessar</a>`;
 }
 
 const projects = [
+    {
+        title: "PokéDex",
+        description: "Site com uma PokeDex que obtém dados de API's externas",
+        github: "PokeDex",
+        download: "",
+        site: true,
+        img: "https://user-images.githubusercontent.com/42483024/169171404-3268f80e-e1e3-4892-a7de-f9e5b39c9318.jpg",
+        tags: [
+            "C++",
+            "SFML",
+            "GameDev"
+        ],
+    },
     {
         title: "BEngine",
         description: "Game Engine em C++",
         github: "BEngine",
         download: "",
+        site: false,
         img: "",
         tags: [
             "C++",
@@ -73,6 +94,7 @@ const projects = [
         description: "Simulador de Redes sem Fio e Algoritmos de Roteamento",
         github: "BWNet-Simulator",
         download: "https://github.com/jgss-gabriel-sousa/BWNet-Simulator/releases/download/v2.1/BWNet.Simulator.v2.1.zip",
+        site: false,
         img: "https://camo.githubusercontent.com/6c20e9e550546c2a21ebcc1ceb3021cf919dc7bb2bf58c12e4b916e590e38da0/68747470733a2f2f692e696d6775722e636f6d2f5479425876556b2e706e67",
         tags: [
             "C++",
