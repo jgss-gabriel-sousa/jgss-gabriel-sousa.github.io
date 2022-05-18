@@ -4,6 +4,11 @@ header {
     z-index: 999;
     transition: top 0.3s;
 }
+
+.contain {
+    object-fit: contain;
+}
+
 /*
 @media (prefers-color-scheme: dark) {
     body {
