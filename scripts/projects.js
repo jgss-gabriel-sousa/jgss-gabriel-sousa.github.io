@@ -52,7 +52,7 @@ function tagsHTML(project){
 function downloadBtnHTML(project){
     if(project.download == "") return "";
 
-    return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="${project.download}" target="_blank" rel="noopener noreferrer">Download</a>`;
+    return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="${project.download}" rel="noopener noreferrer">Download</a>`;
 }
 
 function siteBtnHTML(project){
