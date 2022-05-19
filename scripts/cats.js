@@ -7,8 +7,15 @@ export async function addCats(){
 }
 
 async function getCat(){
-    const res = await fetch("https://aws.random.cat/meow");
-    const img = await res.json();
-    
-    return img.file;
+    try{
+        const res = await fetch("https://aws.random.cat/meow");
+        const img = await res.json();
+        
+        return img.file;
+    }
+    catch(error){
+        console.log(error);
+
+        return "./img/cat.jpg";
+    }
 }
