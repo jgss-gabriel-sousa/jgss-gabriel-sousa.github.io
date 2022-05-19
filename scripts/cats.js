@@ -14,8 +14,10 @@ async function getCat(){
         return img.file;
     }
     catch(error){
-        console.log(error);
-
-        return "./img/cat.jpg";
+        try {
+            return "https://cataas.com/cat";
+        } catch (error) {
+            return "./img/cat.jpg";
+        }
     }
 }

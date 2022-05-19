@@ -1,11 +1,13 @@
 export function generateProjectsHTML(){
     let projectCard = document.getElementById("projects-cards");
 
+    const projects = shuffleArray(projectsData);
+
     projects.forEach(project => {
         projectCard.innerHTML += `
-        <div class="col d-flex">
-            <div class="project-card col card shadow-sm">
-                <div class="bg-secondary m-0 rounded shadow-mx">
+        <div class="col-11 d-flex">
+            <div class="project-card col card shadow-sm border-secondary">
+                <div class="bg-secondary m-0 shadow-mx border-secondary">
                     `+imgHTML(project)+`
                 </div>
 
@@ -31,12 +33,12 @@ function imgHTML(project){
     if(project.img == "") 
         return `
         <figure class="mb-1">
-            <img class="contain rounded cat" width="100%" height="225"">
+            <img class="contain rounded cat cover" width="100%" height="200">
             <figcaption class="small text-center text-light">Sem imagem disponível, mas fique com esse gatinho</figcaption>
         </figure>
         `;
 
-    return `<img class="contain rounded" width="100%" height="225" src="${project.img}">`;
+    return `<img class="contain rounded cover" width="100%" height="225" src="${project.img}">`;
 }
 
 function tagsHTML(project){
@@ -61,7 +63,34 @@ function siteBtnHTML(project){
     return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="https://jgss-gabriel-sousa.github.io/${project.github}/" target="_blank" rel="noopener noreferrer">Acessar</a>`;
 }
 
-const projects = [
+function shuffleArray(array){
+    let currentIndex = array.length,  randomIndex;
+  
+    while (currentIndex != 0){
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}
+
+const projectsData = [
+    {
+        title: "PokéDex",
+        description: "Site com uma PokéDex que obtém dados de API's externas",
+        github: "PokeDex",
+        download: "",
+        site: true,
+        img: "https://user-images.githubusercontent.com/42483024/169171404-3268f80e-e1e3-4892-a7de-f9e5b39c9318.jpg",
+        tags: [
+            "JavaScript",
+            "Front-End",
+            ""
+        ],
+    },
     {
         title: "PokéDex",
         description: "Site com uma PokéDex que obtém dados de API's externas",

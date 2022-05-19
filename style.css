@@ -9,8 +9,23 @@ header {
     object-fit: contain;
 }
 
+.cover {
+    object-fit: cover;
+}
+
 .no-decoration {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #about-me > div > div {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-me > div > div > figure {
+        width: 50%;
+        align-self: center;
+    }
 }
 
 /*
