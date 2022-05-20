@@ -1,7 +1,10 @@
 export function generateProjectsHTML(){
     let projectCard = document.getElementById("projects-cards");
+    projectCard.innerHTML = "";
 
-    const projects = shuffleArray(projectsData);
+    const projects = projectsData;
+    
+    //sortArray(projects,"az");
 
     projects.forEach(project => {
         projectCard.innerHTML += `
@@ -63,34 +66,14 @@ function siteBtnHTML(project){
     return `<a class="btn btn-sm btn-secondary mb-1 rounded" role="button" href="https://jgss-gabriel-sousa.github.io/${project.github}/" target="_blank" rel="noopener noreferrer">Acessar</a>`;
 }
 
-function shuffleArray(array){
-    let currentIndex = array.length,  randomIndex;
-  
-    while (currentIndex != 0){
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]];
-    }
-  
-    return array;
+function sortArray(array, sortType){
+    if(sortType == "az")
+        array.sort((a, b) => a.title.localeCompare(b.title));
+    else if(sortType == "za")
+        array.sort((a, b) => b.title.localeCompare(a.title));
 }
 
 const projectsData = [
-    {
-        title: "PokéDex",
-        description: "Site com uma PokéDex que obtém dados de API's externas",
-        github: "PokeDex",
-        download: "",
-        site: true,
-        img: "https://user-images.githubusercontent.com/42483024/169171404-3268f80e-e1e3-4892-a7de-f9e5b39c9318.jpg",
-        tags: [
-            "JavaScript",
-            "Front-End",
-            ""
-        ],
-    },
     {
         title: "PokéDex",
         description: "Site com uma PokéDex que obtém dados de API's externas",
@@ -150,6 +133,19 @@ const projectsData = [
         download: "",
         site: true,
         img: "",
+        tags: [
+            "JavaScript",
+            "Front-End",
+            ""
+        ],
+    },
+    {
+        title: "Quiz Educativo",
+        description: "Quiz de Perguntas",
+        github: "Quiz-Educativo",
+        download: "",
+        site: true,
+        img: "https://user-images.githubusercontent.com/42483024/169434528-79e0abd8-44bb-47ca-b7ef-12937b16be4b.png",
         tags: [
             "JavaScript",
             "Front-End",
