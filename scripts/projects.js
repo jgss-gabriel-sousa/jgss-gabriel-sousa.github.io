@@ -93,7 +93,7 @@ const projectsData = [
         github: "Heroes-and-Monsters-Bestiario",
         download: "",
         site: true,
-        img: "",
+        img: "https://user-images.githubusercontent.com/42483024/169554255-aa1382ab-a6bc-47e7-aef3-e9252d556484.png",
         tags: [
             "JavaScript",
             "Front-End",
