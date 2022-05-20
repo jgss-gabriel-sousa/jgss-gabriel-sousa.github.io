@@ -15,7 +15,7 @@ export function generateProjectsHTML(){
                 </div>
 
                 <div class="card-body">
-                    <h3 class="card-text"><a class="link-dark no-decoration" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">${project.title}</a></h3>
+                    <h3 class="card-text"><a class="link-dark animated-link" href="https://github.com/jgss-gabriel-sousa/${project.github}" target="_blank" rel="noopener noreferrer">${project.title}</a></h3>
                     <p class="card-text">${project.description}</p>
                     <div class="d-flex justify-content-between align-items-start">
                         <div class="container d-flex flex-column align-items-center btn-group">
@@ -89,7 +89,7 @@ const projectsData = [
     },
     {
         title: "Heroes and Monsters - Bestiário",
-        description: "Bestiário de um sistema de RPG de Mesa",
+        description: "Site com o Bestiário de um sistema de RPG de Mesa",
         github: "Heroes-and-Monsters-Bestiario",
         download: "",
         site: true,
@@ -141,7 +141,7 @@ const projectsData = [
     },
     {
         title: "Quiz Educativo",
-        description: "Quiz de Perguntas",
+        description: "Site com um Quiz de Perguntas de temas variados",
         github: "Quiz-Educativo",
         download: "",
         site: true,
