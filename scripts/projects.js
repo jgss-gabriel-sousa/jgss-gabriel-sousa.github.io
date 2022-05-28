@@ -36,12 +36,12 @@ function imgHTML(project){
     if(project.img == "") 
         return `
         <figure class="mb-1">
-            <img class="contain rounded cat cover" width="100%" height="200">
-            <figcaption class="small text-center text-light">Sem imagem disponível, mas fique com esse gatinho</figcaption>
+            <img class="contain cat cover" width="100%" height="200">
+            <figcaption class="small text-center text-light">Sem imagem disponível, fique com esse gatinho</figcaption>
         </figure>
         `;
 
-    return `<img class="contain rounded cover" width="100%" height="225" src="${project.img}">`;
+    return `<img class="contain cover" width="100%" height="225" src="${project.img}">`;
 }
 
 function tagsHTML(project){
