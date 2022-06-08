@@ -1,5 +1,32 @@
 [
     {
+        "title": "Site Pessoal",
+        "description": "Este site",
+        "github": "jgss-gabriel-sousa.github.io",
+        "popularity": 120,
+        "download": "",
+        "site": true,
+        "img": "",
+        "tags": [
+            "JavaScript",
+            "Bootstrap",
+            "Front-End"
+        ]
+    },
+    {
+        "title": "My Village",
+        "description": "Jogo de Estratégia e Sobrevivência",
+        "github": "My Village",
+        "popularity": 110,
+        "download": "",
+        "site": true,
+        "img": "https://user-images.githubusercontent.com/42483024/172714740-b882fba7-4709-4f2b-acbc-2f9c700c6921.jpg",
+        "tags": [
+            "JavaScript",
+            "Front-End"
+        ]
+    },
+    {
         "title": "PokéDex",
         "description": "Site com uma PokéDex que obtém dados de API's externas",
         "github": "PokeDex",
@@ -9,13 +36,12 @@
         "img": "https://user-images.githubusercontent.com/42483024/169171404-3268f80e-e1e3-4892-a7de-f9e5b39c9318.jpg",
         "tags": [
             "JavaScript",
-            "Front-End",
-            ""
+            "Front-End"
         ]
     },
     {
         "title": "Heroes and Monsters - Bestiário",
-        "description": "Site com o Bestiário de um sistema de RPG de Mesa",
+        "description": "Bestiário de um sistema de RPG de Mesa",
         "github": "Heroes-and-Monsters-Bestiario",
         "download": "",
         "popularity": 90,
@@ -65,13 +91,12 @@
         "img": "",
         "tags": [
             "JavaScript",
-            "Front-End",
-            ""
+            "Front-End"
         ]
     },
     {
         "title": "Quiz Educativo",
-        "description": "Site com um Quiz de Perguntas de temas variados",
+        "description": "Quiz sobre temas variados",
         "github": "Quiz-Educativo",
         "popularity": 50,
         "download": "",
@@ -79,8 +104,7 @@
         "img": "https://user-images.githubusercontent.com/42483024/169434528-79e0abd8-44bb-47ca-b7ef-12937b16be4b.png",
         "tags": [
             "JavaScript",
-            "Front-End",
-            ""
+            "Front-End"
         ]
     }
 ]
