@@ -14,6 +14,10 @@ body {
     background: linear-gradient(315deg, #ffffff, #d7e1ec);
 }
 
+input, select {
+    background-color: #ffffff;
+}
+
 #my-projects {
     min-height: 600px;
 }
