@@ -14,16 +14,17 @@
         ]
     },
     {
-        "title": "My Village",
-        "description": "Jogo de Estratégia e Sobrevivência",
-        "github": "My-Village",
+        "title": "TownRise",
+        "description": "Jogo com estilo Medieval de Estratégia e Construção de Cidade",
+        "github": "TownRise",
         "popularity": 110,
         "download": "",
         "site": true,
-        "img": "https://user-images.githubusercontent.com/42483024/172714740-b882fba7-4709-4f2b-acbc-2f9c700c6921.jpg",
+        "img": "https://user-images.githubusercontent.com/42483024/203086214-c50a5366-c4e7-4afd-bb87-a13459401152.png",
         "tags": [
             "JavaScript",
-            "Front-End"
+            "Front-End",
+            "GameDev"
         ]
     },
     {
