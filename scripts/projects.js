@@ -1,4 +1,4 @@
-import projectsData from "./projectsData.json" assert {type: 'json'};
+import projectsData from "../data/projectsData.json" assert {type: 'json'};
 
 export function generateProjectsHTML(){
     let projectCard = document.getElementById("projects-cards");
@@ -45,12 +45,12 @@ function imgHTML(project){
     if(project.img == "") 
         return `
         <figure class="mb-1">
-            <img class="contain cat cover" width="100%" height="200">
+            <img class="cat cover" width="100%" height="200">
             <figcaption class="small text-center text-light">Sem imagem disponível, fique com esse gatinho</figcaption>
         </figure>
         `;
 
-    return `<img class="contain cover" width="100%" height="225" src="${project.img}">`;
+    return `<img class="cover" width="100%" height="225" src="${project.img}">`;
 }
 
 function tagsHTML(project){

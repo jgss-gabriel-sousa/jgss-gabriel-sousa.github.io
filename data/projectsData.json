@@ -99,10 +99,49 @@
         "title": "Quiz Educativo",
         "description": "Quiz sobre temas variados",
         "github": "Quiz-Educativo",
-        "popularity": 50,
+        "popularity": 85,
         "download": "",
         "site": true,
         "img": "https://user-images.githubusercontent.com/42483024/169434528-79e0abd8-44bb-47ca-b7ef-12937b16be4b.png",
+        "tags": [
+            "JavaScript",
+            "Front-End"
+        ]
+    },
+    {
+        "title": "Bin2Dec Converter",
+        "description": "Conversor de números entre Binário e Decimal",
+        "github": "Binary-Converter",
+        "popularity": 60,
+        "download": "",
+        "site": true,
+        "img": "",
+        "tags": [
+            "JavaScript",
+            "Front-End"
+        ]
+    },
+    {
+        "title": "Daily Bibi",
+        "description": "Memes Diários e Aleatórios da Bibi Cocielo",
+        "github": "Daily-Bibi",
+        "popularity": 60,
+        "download": "",
+        "site": true,
+        "img": "https://user-images.githubusercontent.com/42483024/203100635-6165c905-8d3c-4565-b651-03890671237c.jpg",
+        "tags": [
+            "JavaScript",
+            "Front-End"
+        ]
+    },
+    {
+        "title": "Heroes and Monsters SRD",
+        "description": "System Reference Document de um sistema de RPG de Mesa",
+        "github": "Heroes-and-Monsters-SRD",
+        "popularity": 50,
+        "download": "",
+        "site": true,
+        "img": "https://user-images.githubusercontent.com/42483024/203102750-2da5c067-2754-415c-8881-eff2ae809021.jpg",
         "tags": [
             "JavaScript",
             "Front-End"
