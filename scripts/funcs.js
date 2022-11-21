@@ -4,3 +4,7 @@ export function accentsTidy(s){
     for (let i in non_asciis) { r = r.replace(new RegExp(non_asciis[i], 'g'), i); }
     return r;
 };
+
+export function blankSpaceFix(s){
+    return s.replace(/\s/g, "_");
+}

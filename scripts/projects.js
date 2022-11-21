@@ -1,5 +1,7 @@
 import projectsData from "../data/projectsData.json" assert {type: 'json'};
 
+import { accentsTidy, blankSpaceFix } from "./funcs.js";
+
 export function generateProjectsHTML(){
     let projectCard = document.getElementById("projects-cards");
     projectCard.innerHTML = "";
@@ -14,11 +16,11 @@ export function generateProjectsHTML(){
         let classes = "";
 
         project.tags.forEach(tags => {
-            classes += tags+" ";
+            classes += accentsTidy(tags)+" ";
         });
 
         projectCard.innerHTML += `
-        <div class="project-card col-11 ${project.title} ${classes}">
+        <div class="project-card col-11 ${blankSpaceFix(accentsTidy(project.title))} ${classes}">
             <div class="col card shadow-sm border-secondary">
                 <div class="bg-secondary m-0 shadow-mx border-secondary">
                     `+imgHTML(project)+`
