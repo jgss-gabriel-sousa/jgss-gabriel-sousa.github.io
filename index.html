@@ -100,24 +100,31 @@
         <h1 class="fw-light text-center mb-5">Contatos</h1>
         <div>
             <div class="container d-flex justify-content-center mb-5">
-                
                 <ul class="wrapper">
-                    <li class="icon email" onclick="openNewTab('mailto:jgss.gabriel.sousa@gmail.com')">
-                        <span class="tooltip">E-mail</span>
-                        <span><i class="fab fa-at"></i></span>
-                    </li>
-                    <li class="icon github" onclick="openNewTab('https://github.com/jgss-gabriel-sousa')">
-                        <span class="tooltip">GitHub</span>
-                        <span><i class="fab fa-github"></i></span>
-                    </li>
-                    <li class="icon linkedin" onclick="openNewTab('https://www.linkedin.com/in/jgss-gabriel-sousa/')">
-                        <span class="tooltip">LinkedIn</span>
-                        <span><i class="fab fa-linkedin"></i></span>
-                    </li>
-                    <li class="icon instagram" onclick="openNewTab('https://www.instagram.com/gabriel__sousa._/')">
-                        <span class="tooltip">Instagram</span>
-                        <span><i class="fab fa-instagram"></i></span>
-                    </li>
+                    <a href="mailto:jgss.gabriel.sousa@gmail.com" target="_blank">
+                        <li class="icon email">
+                            <span class="tooltip">E-mail</span>
+                            <span><i class="fab fa-at"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://github.com/jgss-gabriel-sousa" target="_blank">
+                        <li class="icon github">
+                            <span class="tooltip">GitHub</span>
+                            <span><i class="fab fa-github"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jgss-gabriel-sousa" target="_blank">
+                        <li class="icon linkedin">
+                            <span class="tooltip">LinkedIn</span>
+                            <span><i class="fab fa-linkedin"></i></span>
+                        </li>
+                    </a>
+                    <a href="https://www.instagram.com/gbr.sousa" target="_blank">
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                    </a>
                 </ul>
             </div>
             <div class="container d-flex flex-column align-items-center py-1 mb-5" id="contact">
@@ -126,11 +133,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function openNewTab(url){
-            window.open(url, '_blank').focus();
-        }
-    </script>
 </body>
 </html>
