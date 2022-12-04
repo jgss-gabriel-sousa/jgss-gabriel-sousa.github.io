@@ -146,5 +146,42 @@
             "JavaScript",
             "Front-End"
         ]
+    },
+    {
+        "title": "Simple C++ Blockchain",
+        "description": "Implementação simplificada de um algoritmo de Blockchain",
+        "github": "Simple-Cpp-Blockchain",
+        "popularity": 50,
+        "download": "",
+        "site": false,
+        "img": "",
+        "tags": [
+            "C++"
+        ]
+    },
+    {
+        "title": "C Data Structures",
+        "description": "Coleção de Estruturas de Dados implementadas somente com as bibliotecas padrões da linguagem C",
+        "github": "C-Data-Structures",
+        "popularity": 50,
+        "download": "",
+        "site": false,
+        "img": "",
+        "tags": [
+            "C"
+        ]
+    },
+    {
+        "title": "Brazilian Voting Machine",
+        "description": "Reprodução de uma Urna Eletrônica Brasileira",
+        "github": "Brazilian-Voting-Machine",
+        "popularity": 65,
+        "download": "",
+        "site": true,
+        "img": "",
+        "tags": [
+            "JavaScript",
+            "Front-End"
+        ]
     }
 ]
