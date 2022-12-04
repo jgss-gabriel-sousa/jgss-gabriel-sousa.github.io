@@ -5,7 +5,6 @@ export function filter(){
     const searchKey = blankSpaceFix(accentsTidy(document.getElementById("search-key").value));
     const orderTag = document.getElementById("order-tag").value;
     const totalFilters = 2;
-    console.log(orderTag == "all")
     
     for(let i = 0; i < array.length; i++){    
         let filtersOK = 0;
