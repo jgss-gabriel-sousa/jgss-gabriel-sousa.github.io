@@ -48,7 +48,7 @@ function imgHTML(project){
         return `
         <figure class="mb-1">
             <img class="cat cover" width="100%" height="200">
-            <figcaption class="small text-center text-light">Sem imagem disponível, fique com esse gatinho</figcaption>
+            <figcaption class="small text-center text-light">Imagem indisponível :(<br>Mas aqui tem um gatinho fofo para te distrair :)</figcaption>
         </figure>
         `;
 

@@ -161,7 +161,7 @@
     },
     {
         "title": "C Data Structures",
-        "description": "Coleção de Estruturas de Dados implementadas somente com as bibliotecas padrões da linguagem C",
+        "description": "Estruturas de Dados em C com bibliotecas padrão.",
         "github": "C-Data-Structures",
         "popularity": 50,
         "download": "",
