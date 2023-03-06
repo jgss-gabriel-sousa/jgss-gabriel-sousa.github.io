@@ -112,6 +112,25 @@ input[type=search], select {
     margin-bottom: 0;
 }
 
+.nav-item:hover {
+    background-color: rgba(124, 124, 124, 0.8);
+    border-radius: 0.25em;
+}
+
+.skills-card {
+    background-color: #fff;
+    filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
+    padding: 0.5em;
+    margin: 0.5em;
+    font-weight: bold;
+}
+.skills-card-body {
+}
+.skills-card:hover {
+    background-color: #c7c7c7;
+    cursor: pointer;
+}
+
 .hidden {
     display: none;
 }
