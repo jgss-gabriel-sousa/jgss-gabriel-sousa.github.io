@@ -1,4 +1,4 @@
-[
+export const projectsData = [
     {
         "title": "Site Pessoal",
         "description": "Este site",
@@ -197,4 +197,4 @@
             "Front-End"
         ]
     }
-]
+];

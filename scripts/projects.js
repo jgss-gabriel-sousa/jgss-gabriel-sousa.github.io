@@ -1,5 +1,4 @@
-import projectsData from "../data/projectsData.json" assert {type: 'json'};
-
+import { projectsData } from "../data/projectsData.js";
 import { accentsTidy, blankSpaceFix } from "./funcs.js";
 
 export function generateProjectsHTML(){

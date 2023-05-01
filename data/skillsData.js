@@ -1,4 +1,4 @@
-[
+export const skillsData = [
     "C",
     "C++",
     "Python",
@@ -7,4 +7,4 @@
     "JavaScript",
     "Node.JS",
     "Java"
-]
+];

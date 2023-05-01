@@ -1,5 +1,4 @@
-import skillsData from "../data/skillsData.json" assert {type: 'json'};
-
+import { skillsData } from "../data/skillsData.js"
 import { accentsTidy, blankSpaceFix } from "./funcs.js";
 
 export function generateSkillsHTML(){
