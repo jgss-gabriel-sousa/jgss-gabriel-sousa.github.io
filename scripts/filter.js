@@ -9,7 +9,6 @@ export function filter(){
     for(let i = 0; i < array.length; i++){    
         let filtersOK = 0;
 
-
         if(searchKey == "" || array[i].classList[2].includes(searchKey)){
             filtersOK++;
         }
