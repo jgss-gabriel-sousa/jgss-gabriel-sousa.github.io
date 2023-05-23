@@ -2,6 +2,23 @@ import { projectsData } from "../data/projectsData.js";
 import { filter } from "./filter.js";
 import { accentsTidy, blankSpaceFix } from "./funcs.js";
 
+async function getProjectsDataGithub(){
+    let projGitAPI;
+    
+    projectsData.forEach(async project => {
+        try{
+            const res = await fetch("https://api.github.com/repos/jgss-gabriel-sousa/"+project.github);
+            projGitAPI = await res.json();
+            
+            project.popularity = projGitAPI.stargazers_count * projGitAPI.watchers_count + size;
+        }
+        catch(error){
+            return 0;
+        }
+    });
+}
+await getProjectsDataGithub();
+
 export function generateProjectsHTML(){
     let projectCard = document.getElementById("projects-cards");
     projectCard.innerHTML = "";
