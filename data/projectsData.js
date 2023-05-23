@@ -174,7 +174,7 @@ export const projectsData = [
     },
     {
         "title": "C Data Structures",
-        "description": "Estruturas de Dados em C com bibliotecas padrão.",
+        "description": "Estruturas de Dados em C com bibliotecas padrão",
         "github": "C-Data-Structures",
         "popularity": 50,
         "download": "",

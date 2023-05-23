@@ -1,4 +1,5 @@
 import { projectsData } from "../data/projectsData.js";
+import { filter } from "./filter.js";
 import { accentsTidy, blankSpaceFix } from "./funcs.js";
 
 export function generateProjectsHTML(){
@@ -21,7 +22,7 @@ export function generateProjectsHTML(){
         projectCard.innerHTML += `
         <div class="project-card col-11 ${blankSpaceFix(accentsTidy(project.title))} ${classes}">
             <div class="col card shadow-sm border-secondary">
-                <div class="bg-secondary m-0 shadow-mx border-secondary">
+                <div class=" m-0 shadow-mx border-secondary">
                     `+imgHTML(project)+`
                 </div>
 
@@ -40,6 +41,8 @@ export function generateProjectsHTML(){
         </div>
         `;
     });
+
+    filter();
 }
 
 function imgHTML(project){
@@ -47,7 +50,7 @@ function imgHTML(project){
         return `
         <figure class="mb-1">
             <img class="cat cover" width="100%" height="200">
-            <figcaption class="small text-center text-light">Imagem indisponível :(<br>Mas aqui tem um gatinho fofo para te distrair :)</figcaption>
+            <figcaption class="px-2 small text-center text-light">Imagem indisponível :(<br>Mas aqui tem um gatinho fofo para te distrair :)</figcaption>
         </figure>
         `;
 

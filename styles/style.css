@@ -18,6 +18,10 @@ body {
     background-color: #ffffff;
 }
 
+p {
+    line-height: 1.625;
+}
+
 #my-projects {
     min-height: 600px;
 }
