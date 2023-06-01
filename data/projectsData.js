@@ -196,5 +196,17 @@ export const projectsData = [
             "JavaScript",
             "Front-End"
         ]
+    },
+    {
+        "title": "Tailwind Spotify",
+        "description": "Reprodução da interface do Spotify usando o framework TailwindCSS",
+        "github": "Tailwind Spotify",
+        "popularity": 65,
+        "download": "",
+        "site": false,
+        "img": "https://github.com/jgss-gabriel-sousa/Tailwind-Spotify/assets/42483024/6e736fd4-a83f-40ac-b411-a1f38af088bc",
+        "tags": [
+            "Front-End"
+        ]
     }
 ];
