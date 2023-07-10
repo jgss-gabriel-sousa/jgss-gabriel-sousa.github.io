@@ -194,5 +194,19 @@ export const projectsData = [
         "tags": [
             "Front-End"
         ]
+    },
+    {
+        "title": "GP Tycoon",
+        "description": "Jogo Manager de Formula 1, inspirado em Cockpit Manager",
+        "github": "GP-Tycoon",
+        "popularity": 100,
+        "download": "",
+        "site": true,
+        "img": "https://user-images.githubusercontent.com/42483024/252343264-28345947-4e35-4332-84e1-4258a7b48c5a.jpg",
+        "tags": [
+            "Front-End",
+            "GameDev",
+            "JavaScript",
+        ]
     }
 ];
