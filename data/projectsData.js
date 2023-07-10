@@ -1,19 +1,5 @@
 export const projectsData = [
     {
-        "title": "Site Pessoal",
-        "description": "Este site",
-        "github": "jgss-gabriel-sousa.github.io",
-        "popularity": 10,
-        "download": "",
-        "site": true,
-        "img": "",
-        "tags": [
-            "JavaScript",
-            "Bootstrap",
-            "Front-End"
-        ]
-    },
-    {
         "title": "TownRise",
         "description": "Jogo com estilo Medieval de Estratégia e Construção de Cidade",
         "github": "TownRise",
