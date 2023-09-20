@@ -2,6 +2,7 @@
 
 @import "./footer.css";
 @import "./scrollbar.css";
+@import "./images.css";
 
 header {
     position: sticky;

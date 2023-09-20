@@ -39,7 +39,7 @@ export function generateProjectsHTML(){
         projectCard.innerHTML += `
         <div class="project-card col-11 ${blankSpaceFix(accentsTidy(project.title))} ${classes}">
             <div class="col card shadow-sm border-secondary">
-                <div class=" m-0 shadow-mx border-secondary">
+                <div class="m-0 shadow-mx border-secondary">
                     `+imgHTML(project)+`
                 </div>
 
@@ -67,11 +67,11 @@ function imgHTML(project){
         return `
         <figure class="mb-1">
             <img class="cat cover" width="100%" height="200">
-            <figcaption class="px-2 small text-center text-light">Imagem indisponível :(<br>Mas aqui tem um gatinho fofo para te distrair :)</figcaption>
+            <figcaption class="px-2 small text-center">Imagem indisponível :(<br>Mas aqui tem um gatinho fofo para te distrair :)</figcaption>
         </figure>
         `;
 
-    return `<img class="cover" width="100%" height="225" src="${project.img}">`;
+    return `<img class="project-image cover" width="100%" height="225" src="${project.img}" alt="${project.title}">`;
 }
 
 function tagsHTML(project){
