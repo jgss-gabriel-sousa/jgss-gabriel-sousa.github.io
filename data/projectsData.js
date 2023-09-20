@@ -1,19 +1,5 @@
 export const projectsData = [
     {
-        "title": "Site Pessoal",
-        "description": "Este site",
-        "github": "jgss-gabriel-sousa.github.io",
-        "popularity": 10,
-        "download": "",
-        "site": true,
-        "img": "",
-        "tags": [
-            "JavaScript",
-            "Bootstrap",
-            "Front-End"
-        ]
-    },
-    {
         "title": "TownRise",
         "description": "Jogo com estilo Medieval de Estratégia e Construção de Cidade",
         "github": "TownRise",
@@ -207,6 +193,20 @@ export const projectsData = [
         "img": "https://github.com/jgss-gabriel-sousa/Tailwind-Spotify/assets/42483024/6e736fd4-a83f-40ac-b411-a1f38af088bc",
         "tags": [
             "Front-End"
+        ]
+    },
+    {
+        "title": "GP Tycoon",
+        "description": "Jogo Manager de Formula 1, inspirado em Cockpit Manager",
+        "github": "GP-Tycoon",
+        "popularity": 100,
+        "download": "",
+        "site": true,
+        "img": "https://user-images.githubusercontent.com/42483024/252343264-28345947-4e35-4332-84e1-4258a7b48c5a.jpg",
+        "tags": [
+            "Front-End",
+            "GameDev",
+            "JavaScript",
         ]
     }
 ];
