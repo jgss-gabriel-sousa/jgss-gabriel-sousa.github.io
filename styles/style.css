@@ -117,7 +117,7 @@ input[type=search], select {
     margin-bottom: 0;
 }
 
-.nav-item:hover {
+.nav-item:hover, .nav-selected {
     background-color: rgba(124, 124, 124, 0.8);
     border-radius: 0.25em;
 }

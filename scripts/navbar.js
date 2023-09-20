@@ -1,19 +1,36 @@
 export function hideNavbar(){
     const header = document.getElementById("header");
-    let prevScrollpos = window.pageYOffset;
-    let currentScrollPos;
-
-    prevScrollpos = currentScrollPos;
+    let YPos;
 
     window.addEventListener("scroll", () => {
-        currentScrollPos = window.pageYOffset;
+        YPos = pageYOffset + window.innerHeight/4 + 72;
         
-        if(prevScrollpos > currentScrollPos) {
-            header.style.top = "0";
-        } else {
-            header.style.top = "-100px";
-        }
+        const home = document.querySelector("#home").offsetTop;
+        const about = document.querySelector("#about-me").offsetTop;
+        const projects = document.querySelector("#my-projects").offsetTop;
+        const contacts = document.querySelector("footer").offsetTop;
 
-        prevScrollpos = currentScrollPos;
+        console.log(YPos)
+        console.log("home: "+home)
+        console.log("about: "+about)
+        console.log("projects: "+projects)
+        console.log("contacts: "+contacts)
+
+        document.querySelectorAll("#navbarHeader > div > ul > li").forEach(e => {
+            e.classList.remove("nav-selected");
+        });
+
+        if(YPos > contacts){
+            document.querySelector("#navbarHeader > div > ul > li:nth-child(4)").classList.add("nav-selected");
+        }
+        else if(YPos > projects){
+            document.querySelector("#navbarHeader > div > ul > li:nth-child(3)").classList.add("nav-selected");
+        }
+        else if(YPos > about){
+            document.querySelector("#navbarHeader > div > ul > li:nth-child(2)").classList.add("nav-selected");
+        }
+        else if(YPos >= home){
+            document.querySelector("#navbarHeader > div > ul > li:nth-child(1)").classList.add("nav-selected");
+        }
     });
 }
