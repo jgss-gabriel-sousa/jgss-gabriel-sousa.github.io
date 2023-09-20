@@ -1,7 +1,7 @@
-footer a {
+.wrapper a {
     color: #212529;
 }
-footer a:hover {
+.wrapper a:hover {
     color: #212529;
 }
 
@@ -98,6 +98,9 @@ footer a:hover {
     color: #ffffff;
 }
   
-.fa-facebook-f:before {
-    content: "\f09b";
+.wrapper .resume:hover,
+.wrapper .resume:hover .tooltip,
+.wrapper .resume:hover .tooltip::before {
+    background: #d4d246;
+    color: #100000;
 }
