@@ -1,4 +1,5 @@
 import { accentsTidy, blankSpaceFix } from "./funcs.js";
+import { images } from "./images.js";
 
 export function filter(){
     const array = document.querySelectorAll(".project-card");
@@ -33,4 +34,6 @@ export function filter(){
             array[i].classList.add("hidden");
         }
     }
+
+    images();
 }
