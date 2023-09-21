@@ -10,12 +10,6 @@ export function hideNavbar(){
         const projects = document.querySelector("#my-projects").offsetTop;
         const contacts = document.querySelector("footer").offsetTop;
 
-        console.log(YPos)
-        console.log("home: "+home)
-        console.log("about: "+about)
-        console.log("projects: "+projects)
-        console.log("contacts: "+contacts)
-
         document.querySelectorAll("#navbarHeader > div > ul > li").forEach(e => {
             e.classList.remove("nav-selected");
         });
