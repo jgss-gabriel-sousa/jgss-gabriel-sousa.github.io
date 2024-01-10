@@ -61,7 +61,7 @@ export const projectsData = [
         "popularity": 70,
         "download": "https://github.com/jgss-gabriel-sousa/BWNet-Simulator/releases/download/v2.1/BWNet.Simulator.v2.1.zip",
         "site": false,
-        "img": "https://camo.githubusercontent.com/6c20e9e550546c2a21ebcc1ceb3021cf919dc7bb2bf58c12e4b916e590e38da0/68747470733a2f2f692e696d6775722e636f6d2f5479425876556b2e706e67",
+        "img": "https://camo.githubusercontent.com/52515a8a3a3b70608de690b336220d3591674af338ac087395b0dcfd1245e0e4/68747470733a2f2f692e696d6775722e636f6d2f5479425876556b2e706e67",
         "tags": [
             "C++",
             "SFML",
@@ -153,7 +153,7 @@ export const projectsData = [
         "popularity": 50,
         "download": "",
         "site": false,
-        "img": "https://camo.githubusercontent.com/83011f31fffcfe44344b1bbe5be50cc7f07a0ed983fa5db26f9f20cec8fb018e/68747470733a2f2f7777772e61757269676169742e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032332f30312f576861742d49732d426c6f636b636861696e2d496e666f677261706869632d31303234783535312e6a7067",
+        "img": "https://camo.githubusercontent.com/cb0b76ce0256391d50c9b25060eff7e785189f245e32568534d21c25d31719cd/68747470733a2f2f7777772e61757269676169742e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032332f30312f576861742d49732d426c6f636b636861696e2d496e666f677261706869632d31303234783535312e6a7067",
         "tags": [
             "C++"
         ]

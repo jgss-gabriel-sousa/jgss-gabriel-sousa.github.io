@@ -1,6 +1,8 @@
 
 .project-image {
     cursor: pointer;
+    min-height: 200px;
+    min-width: 100%;
 }
 .project-image:hover {
     border: 1px solid #777;
