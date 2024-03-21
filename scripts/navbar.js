@@ -8,7 +8,7 @@ export function hideNavbar(){
         const home = document.querySelector("#home").offsetTop;
         const about = document.querySelector("#about-me").offsetTop;
         const projects = document.querySelector("#my-projects").offsetTop;
-        const contacts = document.querySelector("footer").offsetTop;
+        const contacts = document.querySelector("footer").offsetTop - document.querySelector("footer").offsetHeight;
 
         document.querySelectorAll("#navbarHeader > div > ul > li").forEach(e => {
             e.classList.remove("nav-selected");
