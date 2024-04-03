@@ -1,5 +1,5 @@
 export function hideNavbar(){
-    const header = document.getElementById("header");
+    const header = document.querySelector("header");
     let YPos;
 
     window.addEventListener("scroll", () => {
@@ -10,21 +10,21 @@ export function hideNavbar(){
         const projects = document.querySelector("#my-projects").offsetTop;
         const contacts = document.querySelector("footer").offsetTop - document.querySelector("footer").offsetHeight;
 
-        document.querySelectorAll("#navbarHeader > div > ul > li").forEach(e => {
+        document.querySelectorAll("header > nav > ul > li").forEach(e => {
             e.classList.remove("nav-selected");
         });
 
         if(YPos > contacts){
-            document.querySelector("#navbarHeader > div > ul > li:nth-child(4)").classList.add("nav-selected");
+            document.querySelector("header > nav > ul > li:nth-child(4)").classList.add("nav-selected");
         }
         else if(YPos > projects){
-            document.querySelector("#navbarHeader > div > ul > li:nth-child(3)").classList.add("nav-selected");
+            document.querySelector("header > nav > ul > li:nth-child(3)").classList.add("nav-selected");
         }
         else if(YPos > about){
-            document.querySelector("#navbarHeader > div > ul > li:nth-child(2)").classList.add("nav-selected");
+            document.querySelector("header > nav > ul > li:nth-child(2)").classList.add("nav-selected");
         }
         else if(YPos >= home){
-            document.querySelector("#navbarHeader > div > ul > li:nth-child(1)").classList.add("nav-selected");
+            document.querySelector("header > nav > ul > li:nth-child(1)").classList.add("nav-selected");
         }
     });
 }

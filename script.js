@@ -14,3 +14,15 @@ generateProjectsHTML();
 images();
 addCats();
 hideNavbar();
+
+document.querySelectorAll("#my-projects .container").forEach(element => {
+    element.addEventListener
+});
+
+window.onclick = event => {
+    if(event.target.classList.contains("project-card-tag")){
+        document.getElementById("order-tag").value =  event.target.innerText.toLowerCase();
+        document.getElementById("order-tag").focus();
+        filter();
+    }
+}
