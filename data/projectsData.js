@@ -208,5 +208,18 @@ export const projectsData = [
             "GameDev",
             "JavaScript",
         ]
-    }
+    },
+    {
+        "title": "AssemblyJS",
+        "description": "Interpretador de Assembly Online",
+        "github": "AssemblyJS",
+        "popularity": 20,
+        "download": "",
+        "site": true,
+        "img": "https://github.com/jgss-gabriel-sousa/AssemblyJS/assets/42483024/0d61bd69-4912-49f3-88db-f886b5621371",
+        "tags": [
+            "Front-End",
+            "JavaScript",
+        ]
+    },
 ];
