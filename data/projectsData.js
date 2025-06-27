@@ -108,19 +108,6 @@ export const projectsData = [
         ]
     },
     {
-        "title": "Daily Bibi",
-        "description": "Memes Diários e Aleatórios da Bibi Cocielo",
-        "github": "Daily-Bibi",
-        "popularity": 60,
-        "download": "",
-        "site": true,
-        "img": "https://user-images.githubusercontent.com/42483024/203100635-6165c905-8d3c-4565-b651-03890671237c.jpg",
-        "tags": [
-            "JavaScript",
-            "Front-End"
-        ]
-    },
-    {
         "title": "Site Advocacia",
         "description": "",
         "github": "Site-Advocacia",
